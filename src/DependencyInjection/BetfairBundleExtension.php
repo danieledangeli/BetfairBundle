@@ -17,19 +17,19 @@ class BetfairBundleExtension extends ConfigurableExtension
      */
     protected function loadInternal(array $mergedConfig, ContainerBuilder $container)
     {
-        $container->setAlias(
+        $container->setParameter(
             'betfair_application_key',
-            $mergedConfig["app_key"]
+            $mergedConfig["appKey"]
         );
 
-        $container->setAlias(
-            'betfair_usernname',
-            $mergedConfig["betfair-username"]
+        $container->setParameter(
+            'betfair_username',
+            $mergedConfig["betfairUsername"]
         );
 
-        $container->setAlias(
+        $container->setParameter(
             'betfair_password',
-            $mergedConfig["betfair-password"]
+            $mergedConfig["betfairPassword"]
         );
 
         $loader = new YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));

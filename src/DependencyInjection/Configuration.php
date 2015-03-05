@@ -21,11 +21,9 @@ class Configuration implements ConfigurationInterface
 
         $rootNode
             ->children()
-                ->scalarNode('app_key')->end()
-            ->children()
-                ->scalarNode('betfair-username')->end()
-            ->children()
-                ->scalarNode('betfair-password')->end();
+                ->scalarNode('appKey')->end()
+                ->scalarNode('betfairUsername')->end()
+                ->scalarNode('betfairPassword')->end();
 
         return $treeBuilder;
     }
