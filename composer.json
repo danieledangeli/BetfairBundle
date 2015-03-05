@@ -15,7 +15,7 @@
     "require": {
         "php": ">=5.4",
         "symfony/framework-bundle": "~2.0",
-        "erlangb/betfair": "dev-master"
+        "erlangb/betfair": "0.2.*"
     },
     "require-dev": {
         "phpunit/phpunit": "4.5.*"

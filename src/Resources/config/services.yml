@@ -1,0 +1,8 @@
+services:
+    betfair_php:
+        class: Erlangb\BetfairBundle\Service\Betfair
+        arguments:
+            # configured inside the bundle configuration
+            - @betfair_application_key
+            - @betfair_username
+            - @betfair_password
